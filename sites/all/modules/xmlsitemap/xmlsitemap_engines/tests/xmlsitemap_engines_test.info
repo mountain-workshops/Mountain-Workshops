@@ -1,0 +1,7 @@
+name = XML sitemap engines test
+description = Support module for XML sitemap engines testing.
+package = Testing
+core = 7.x
+files[] = xmlsitemap_engines_test.module
+version = VERSION
+hidden = TRUE

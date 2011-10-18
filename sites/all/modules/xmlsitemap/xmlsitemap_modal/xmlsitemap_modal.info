@@ -1,0 +1,8 @@
+name = XML sitemap modal UI
+description = "Provides an AJAX modal UI for common XML sitemap tasks."
+package = XML sitemap
+core = 7.x
+dependencies[] = xmlsitemap
+dependencies[] = ctools
+files[] = xmlsitemap_modal.module
+hidden = TRUE

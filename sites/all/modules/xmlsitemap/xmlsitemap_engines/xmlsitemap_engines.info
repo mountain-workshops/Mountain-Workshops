@@ -1,0 +1,11 @@
+name = XML sitemap engines
+description = Submit the sitemap to search engines.
+package = XML sitemap
+core = 7.x
+dependencies[] = xmlsitemap
+files[] = xmlsitemap_engines.module
+files[] = xmlsitemap_engines.admin.inc
+files[] = xmlsitemap_engines.install
+files[] = tests/xmlsitemap_engines.test
+recommends[] = site_verify
+configure = admin/config/search/xmlsitemap/engines

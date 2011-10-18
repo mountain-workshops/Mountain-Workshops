@@ -1,0 +1,8 @@
+name = XML sitemap node
+description = Adds content links to the sitemap.
+package = XML sitemap
+core = 7.x
+dependencies[] = xmlsitemap
+files[] = xmlsitemap_node.module
+files[] = xmlsitemap_node.install
+files[] = xmlsitemap_node.test
