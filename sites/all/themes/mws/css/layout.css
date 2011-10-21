@@ -1,0 +1,165 @@
+/**
+ * @file
+ * Layout styles.
+ */
+
+/* Collapsible columns layout */
+
+#page {
+  width: 960px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.sidebar {
+  margin-left: 2%;
+  width: 18%;
+}
+
+#sidebar-first {
+  float: left;
+}
+
+#sidebar-second {
+  float: right;
+}
+
+.one-sidebar #content {
+  width: 80%;
+}
+
+.two-sidebars #content {
+  width: 60%;
+}
+
+.no-sidebars #content {
+  float: none;
+}
+
+.sidebar-second #content,
+.two-sidebars #content {
+  float: left;
+}
+
+.sidebar-first #content {
+  float: right;
+}
+
+.page-blog #content .field-content img,
+.node-type-blog-post #content .field-content img,
+.node-type-faculty-staff #content .field-item img,
+.field-name-field-featured-image img{
+  width: 100%;
+}
+.field-name-body .field-item {
+  text-align:justify;
+  text-justify:inter-word;
+}
+.video-wrapper{
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  #page { width: 90%; }
+  .field-name-body .field-item {
+    -moz-column-count: 1;
+  	-moz-column-gap: 25px;
+  	-webkit-column-count: 1;
+  	-webkit-column-gap: 25px;
+  	column-count: 1;
+  	column-gap: 25px;
+  }
+  
+  .one-sidebar #content,
+  .sidebar {
+     width: 100%;
+  }
+  ul.facebook-feed li, 
+  ul.tweets-pulled-listing li {
+    width: 47%;
+    margin-right: 3%;
+    float: left;
+    border-bottom: none !important;
+  }
+  .feed-item-3,
+  .feed-item-4,
+  .feed-item-5,
+  .feed-item-6,
+  .feed-item-7,
+  .feed-item-8,
+  .feed-item-9,
+  .feed-item-10{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+
+  #page { width: 576px; }
+  .field-name-body .field-item {
+    -moz-column-count: 1;
+  	-moz-column-gap: 25px;
+  	-webkit-column-count: 1;
+  	-webkit-column-gap: 25px;
+  	column-count: 1;
+  	column-gap: 25px;
+
+  }
+  
+  .one-sidebar #content,
+  .sidebar {
+     width: 100%;
+  }
+  ul.facebook-feed li, 
+  ul.tweets-pulled-listing li {
+    width: 22%;
+    margin-right: 3%;
+    float: left;
+    border-bottom: none !important;
+  }
+  .feed-item-5,
+  .feed-item-6,
+  .feed-item-7,
+  .feed-item-8,
+  .feed-item-9,
+  .feed-item-10{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 960px){
+  #page { width: 940px; }
+  .field-name-body .field-item {
+    -moz-column-count: 2;
+  	-moz-column-gap: 25px;
+  	-webkit-column-count: 2;
+  	-webkit-column-gap: 25px;
+  	column-count: 2;
+  	column-gap: 25px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+
+  #page { width: 1280px; }
+  .field-name-body .field-item {
+    -moz-column-count: 3;
+  	-moz-column-gap: 25px;
+  	-webkit-column-count: 3;
+  	-webkit-column-gap: 25px;
+  	column-count: 3;
+  	column-gap: 25px;
+  }
+}
+
+	

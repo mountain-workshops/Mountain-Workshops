@@ -1,0 +1,5 @@
+name = CUSTOM - Hook Form Alter Stuff, etc
+description = "Catch all for hook form alter stuff."
+core = 7.x
+package = CUSTOM
+files[] = custom.module

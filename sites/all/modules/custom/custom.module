@@ -1,0 +1,35 @@
+<?php
+
+
+/**
+ * Implements hook_init().
+ */
+function custom_init() {
+	$current_path = current_path();
+	if($current_path == 'node/add/blog-post'){
+		drupal_add_css(drupal_get_path('module', 'custom') . '/custom.css');
+	}
+	if($current_path == 'node/103' || $current_path == 'past_workshops'){
+		drupal_add_js('sites/all/libraries/swfobject/swfobject.js');
+		drupal_add_js('swfobject.registerObject("myId", "9.0.0", "sites/all/libraries/swfobject/expressInstall.swf");',
+			array('type' => 'inline', 'scope' => 'header')
+		);
+	}
+}
+
+function custom_image_field_widget_process($element, &$form_state, $form) {
+	dpm($element);	
+}
+
+
+
+/**
+ * Implement hook_form_alter().
+ * (cant use hook_form_FORM_ID_alter(). here as the form ID changes from node to node)
+ */
+function custom_form_alter(&$form, $form_state, $form_id) {
+  // If we dont have permission to set the title then we need to abort this alter now!
+  
+  //dpm($form['field_featured_image']);
+
+}

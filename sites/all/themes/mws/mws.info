@@ -1,0 +1,25 @@
+name = Mountain Workshops
+description = Custom adaptive theme for the Mountain Workshops website.
+core = 7.x
+
+screenshot = screenshot.png
+
+scripts[] = js/mws.js
+
+stylesheets[all][] = css/defaults/global.css
+stylesheets[all][] = css/layout.css
+stylesheets[all][] = css/mws.css
+
+regions[sidebar_first] = Sidebar first
+regions[sidebar_second] = Sidebar second
+regions[content] = Content
+regions[header] = Header
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[footer] = Footer
+regions[highlighted] = Highlighted
+
+
+
+
+

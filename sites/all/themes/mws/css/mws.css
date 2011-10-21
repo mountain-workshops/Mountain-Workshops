@@ -1,0 +1,171 @@
+/*
+ * @file
+ * This file holds all the MWS theme styles.  When in doubt, add styles here under the appropriate section
+ */
+
+
+/* GLOBALS */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;;
+  background: url("../images/highlight.png") no-repeat scroll center top #B2B6BF;
+  color: #555;
+  line-height: 1.4;
+}
+a {
+  color: #5D6D99;
+}
+
+
+
+
+/*  HEADER  */
+#header{
+  padding-bottom: 50px;
+}
+#logo,
+#site-name,
+#navigation{
+  float: left;
+  height: 82px;
+  line-height: 82px;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+#site-name{
+  margin: 0;
+}
+#site-name a{
+  display: block;
+  color: #FFF;
+  padding: 0 20px;
+}
+#main-menu a {
+  color: #414346;
+}
+#main-menu li{
+}
+
+
+
+
+/* BLOG */
+
+.view-blog.view-display-id-page .views-row {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #E1E1E1;
+  margin-bottom: 30px;
+}
+.view-blog.view-display-id-page .views-field-field-blog-author{
+  display: inline;
+  text-transform: uppercase;
+  color:  #E2E2E2;
+  padding-right: 10px;
+  
+}
+.view-blog.view-display-id-page .views-field-created{
+  display: inline;
+  color:  #D3D3D4;
+  padding-left: 10px;
+  border-left:  1px solid #E2E2E2;
+}
+.view-blog.view-display-id-page .views-field-title a{
+  color: #444;
+  font-size: 48px;
+}
+.view-blog.view-display-id-page .views-field-title a:hover{
+  color: #888;
+}
+.view-blog.view-display-id-page .views-field-view-node a{
+  color: #5D6D99;
+}
+.view-blog.view-display-id-page .views-field-view-node a:hover{
+  color: #888;
+}
+
+  /* blog post page */
+.caption{
+  float: left;
+  width:  80%;
+}
+.byline {
+  float: right;
+}
+  
+
+/* RIGHT SIDEBAR */
+ul.facebook-feed li,
+ul.tweets-pulled-listing li {
+  color: #666;
+  font-size: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #D3D2D3;
+  list-style-type: none;
+}
+ul.facebook-feed li.last,
+ul.tweets-pulled-listing li.last {
+  border-bottom: none;
+}
+ul.tweets-pulled-listing li a {
+  color: #5D6D99;
+}
+ul.tweets-pulled-listing{
+  font-size: 12px;
+  list-style-type: none;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+
+/*  FACULTY  */
+
+.view-faculty-staff ul{
+  padding-left: 150px;
+}
+.view-faculty-staff li{
+  position: relative;
+  list-style-type: none;
+  width: 45%;
+  margin-left: 5%;
+  float: left;
+}
+.view-faculty-staff .views-field-title a {
+  display: block;
+  border-bottom: 1px solid #CCCCCC;
+  font-size: 120%;
+  height: 50px;
+  line-height: 50px;
+  padding: 15px 0;
+}
+.view-faculty-staff .views-field-field-faculty-staff-image{
+  background: url("../images/thumb-background.png") no-repeat scroll 0 0 transparent;
+  display: none;
+  height: 133px;
+  margin-left: -220px;
+  top: -25px;
+  padding: 20px 0 0;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  z-index: 50;
+}
+
+@media screen and (min-width: 1300px) {
+  .view-faculty-staff li{
+    width: 28%;
+  }
+  
+  /* FOOTER */
+  div#footer .block{
+	width: 25%;
+	float: left;
+  }
+}
+
+
+/* Past Workshops - Right sidebar thumbs*/ 
+div.region-sidebar-second ul li{
+	list-style-type: none;
+	margin-left: -20px;
+}
