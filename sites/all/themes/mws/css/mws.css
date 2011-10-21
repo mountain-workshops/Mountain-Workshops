@@ -7,10 +7,10 @@
 /* GLOBALS */
 
 body {
-  font-family: Arial, Helvetica, sans-serif;;
+  font-family: Helvetica,Geneva,Arial,sans-serif;
   background: url("../images/highlight.png") no-repeat scroll center top #B2B6BF;
   color: #555;
-  line-height: 1.4;
+  line-height: 1.4em;
 }
 a {
   color: #5D6D99;
@@ -20,33 +20,144 @@ a {
 
 
 /*  HEADER  */
-#header{
-  padding-bottom: 50px;
+#header {
+  margin-bottom: 100px;
 }
-#logo,
-#site-name,
-#navigation{
-  float: left;
-  height: 82px;
-  line-height: 82px;
-  font-size: 18px;
+#logo {
+  float:  left;
+  box-shadow: 3px 3px 6px #8A8D94;
+}
+#logo img{
+  display: block;
+}
+#name {
+  float:  left;
+}
+#site-name {
+  font-size: 17px;
   text-transform: lowercase;
-}
-#site-name{
+  line-height: 82px;
   margin: 0;
+  font-family: 'MyriadProBoldCondensed',Helvetica,Geneva,Arial,sans-serif;
 }
 #site-name a{
   display: block;
   color: #FFF;
   padding: 0 20px;
 }
+#navigation {
+  float: left;
+  line-height: 82px;
+  font-size: 17px;
+  text-transform: lowercase;
+}
 #main-menu a {
   color: #414346;
+  font-family: 'MyriadProRegular',Helvetica,Geneva,Arial,sans-serif;
 }
 #main-menu li{
+  background: transparent url('../images/menu-item-separator.gif') no-repeat 0 50%;
+  padding: 0 .5em 0 .8em;
+}
+#main-menu li.first {
+  background: none;
+  padding-left: 0;
+}
+#main-menu li span.outer {
+  position: absolute;
+  display: none;
+}
+#main-menu li span.inner {
+  position: relative;
+  left:  -50%;
+  top:  20px;
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  #header {
+    margin-bottom: 50px;
+  }
+  #navigation {
+    line-height: 1.4;
+    padding-top: 15px;
+  }
+  #main-menu li{
+    padding: 0 .3em 0 .5em;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #header {
+    margin-bottom: 50px;
+  }
+  #navigation {
+    line-height: 1.4;
+    padding-top: 15px;
+  }
+  #main-menu li{
+    padding: 0 .3em 0 .5em;
+    font-size: 16px;
+  }
 }
 
 
+
+
+/* FOOTER */
+
+#footer .block {
+  width: 25%;
+  float: left;
+  margin: 80px 0 20px;
+}
+#footer .block-inner {
+  padding: 1.25em;
+  border-left: 1px solid #999;
+  min-height: 20em;
+}
+#block-block-4 .block-inner {
+  border: none;
+}
+#footer h2.block-title{
+  color: #7F808A;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0.125em 0.188em #CCCCCC;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+#footer .block-content{
+  color: #666;
+  font-size: 0.8em;
+  line-height: 2em;
+}
+#footer a {
+  color: #666;
+}
+#footer a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  #footer .block {
+    width: 50%;
+    float: left;
+  }
+  #block-block-6 .block-inner{
+    border: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  #footer .block {
+    width: 100%;
+    float: left;
+  }
+  #footer .block-inner {
+    border-left: none;
+    border-top: 1px solid #999;
+    min-height: 0;
+  }
+
+}
 
 
 /* BLOG */
@@ -91,7 +202,17 @@ a {
 .byline {
   float: right;
 }
-  
+.field-name-field-blog-author {
+  color: #E1DFD7;
+  text-transform: uppercase;
+}
+.field-name-field-featured-image {
+  margin: 20px 0;
+}
+.field-name-body {
+  margin: 0 0 100px;
+}
+
 
 /* RIGHT SIDEBAR */
 ul.facebook-feed li,
@@ -150,22 +271,39 @@ ul.tweets-pulled-listing{
   width: 200px;
   z-index: 50;
 }
-
 @media screen and (min-width: 1300px) {
-  .view-faculty-staff li{
+  .view-faculty-staff li {
     width: 28%;
   }
   
-  /* FOOTER */
-  div#footer .block{
-	width: 25%;
-	float: left;
-  }
+}
+
+  /* faculty detail page */
+  
+.field-name-field-biography {
+  margin: 0 0 100px;
+}
+.field-name-field-affiliation  {
+  color: #E1DFD7;
+  text-transform: uppercase;
 }
 
 
+
 /* Past Workshops - Right sidebar thumbs*/ 
-div.region-sidebar-second ul li{
-	list-style-type: none;
-	margin-left: -20px;
+div.region-sidebar-second ul{
+   padding-left: 0px;
+}
+
+div#past-workshops-list ul li{
+   list-style-type: none;
+}
+
+div#past-workshops-list ul li img{
+   display: none;
+}
+
+div#past-workshops-list ul{
+	float:left;
+	width: 30%;
 }

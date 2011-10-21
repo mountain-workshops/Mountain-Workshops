@@ -93,7 +93,7 @@ function mws_links__system_main_menu($variables){
 		
 		if (isset($link['attributes'])) {
 			if(isset($link['attributes']['title'])){
-				$output .= '<span>' . $link['attributes']['title']  . '</span>';
+				$output .= '<span class="outer"><span class="inner">' . $link['attributes']['title']  . '</span></span>';
 			}
 		}
       }

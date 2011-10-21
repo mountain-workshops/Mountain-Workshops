@@ -6,9 +6,9 @@
 /* Collapsible columns layout */
 
 #page {
-  width: 960px;
+  width: 940px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 0 0 10px;
 }
 
 .sidebar {
@@ -51,7 +51,8 @@
 .field-name-field-featured-image img{
   width: 100%;
 }
-.field-name-body .field-item {
+.field-name-body .field-item,
+.field-name-field-biography .field-item {
   text-align:justify;
   text-justify:inter-word;
 }
@@ -68,8 +69,9 @@
   height: 100%;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 564px) {
   #page { width: 90%; }
+  .field-name-field-biography .field-item,
   .field-name-body .field-item {
     -moz-column-count: 1;
   	-moz-column-gap: 25px;
@@ -102,9 +104,10 @@
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 960px) {
+@media screen and (min-width: 564px) and (max-width: 960px) {
 
-  #page { width: 576px; }
+  #page { width: 544px; }
+  .field-name-field-biography .field-item,
   .field-name-body .field-item {
     -moz-column-count: 1;
   	-moz-column-gap: 25px;
@@ -112,7 +115,6 @@
   	-webkit-column-gap: 25px;
   	column-count: 1;
   	column-gap: 25px;
-
   }
   
   .one-sidebar #content,
@@ -139,6 +141,7 @@
 
 @media screen and (max-width: 1300px) and (min-width: 960px){
   #page { width: 940px; }
+  .field-name-field-biography .field-item,
   .field-name-body .field-item {
     -moz-column-count: 2;
   	-moz-column-gap: 25px;
@@ -152,6 +155,7 @@
 @media screen and (min-width: 1300px) {
 
   #page { width: 1280px; }
+  .field-name-field-biography .field-item,
   .field-name-body .field-item {
     -moz-column-count: 3;
   	-moz-column-gap: 25px;

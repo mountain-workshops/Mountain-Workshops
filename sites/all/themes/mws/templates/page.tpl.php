@@ -84,7 +84,7 @@
     </div>
 
     <div id="footer">
-      <div class="section">
+      <div class="section clearfix">
         <?php print render($page['footer']); ?>
       </div>
     </div>
